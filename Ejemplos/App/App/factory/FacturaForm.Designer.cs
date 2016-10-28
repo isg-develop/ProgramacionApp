@@ -68,13 +68,13 @@
         	this.optIVA16.Name = "optIVA16";
         	this.optIVA16.Size = new System.Drawing.Size(102, 28);
         	this.optIVA16.TabIndex = 2;
-        	this.optIVA16.TabStop = true;
         	this.optIVA16.Text = "IVA 16%";
         	this.optIVA16.UseVisualStyleBackColor = true;
         	// 
         	// optIVA5
         	// 
         	this.optIVA5.AutoSize = true;
+        	this.optIVA5.Checked = true;
         	this.optIVA5.Font = new System.Drawing.Font("Myriad Web Pro", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
         	this.optIVA5.Location = new System.Drawing.Point(41, 53);
         	this.optIVA5.Name = "optIVA5";

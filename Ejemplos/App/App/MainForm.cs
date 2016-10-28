@@ -11,6 +11,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 using App.factory;
+using App.prototype;
 using App.Singleton;
 
 namespace App
@@ -40,6 +41,14 @@ namespace App
 			FacturaForm ventana = new FacturaForm();
 			ventana.StartPosition = FormStartPosition.CenterScreen;		
 			ventana.Show();
+		}
+		
+		void BtnPrototypeClick(object sender, EventArgs e)
+		{
+			// Ver formulario
+			PrototypeForm ventana = new PrototypeForm();
+			ventana.StartPosition = FormStartPosition.CenterScreen;		
+			ventana.Show();	
 		}
 	}
 }

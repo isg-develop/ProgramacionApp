@@ -4,6 +4,7 @@ C:\GitHub\ProgramacionApp\Ejemplos\App\App\bin\Debug\App.pdb
 C:\GitHub\ProgramacionApp\Ejemplos\App\App\obj\Debug\App.csprojResolveAssemblyReference.cache
 C:\GitHub\ProgramacionApp\Ejemplos\App\App\obj\Debug\App.factory.FacturaForm.resources
 C:\GitHub\ProgramacionApp\Ejemplos\App\App\obj\Debug\App.MainForm.resources
+C:\GitHub\ProgramacionApp\Ejemplos\App\App\obj\Debug\App.prototype.PrototypeForm.resources
 C:\GitHub\ProgramacionApp\Ejemplos\App\App\obj\Debug\App.Singleton.BaseMDIForm1.resources
 C:\GitHub\ProgramacionApp\Ejemplos\App\App\obj\Debug\App.Singleton.NormalForm.resources
 C:\GitHub\ProgramacionApp\Ejemplos\App\App\obj\Debug\App.Singleton.SingletonForm.resources

@@ -17,6 +17,7 @@ namespace App
 		private System.Windows.Forms.GroupBox groupBox1;
 		private System.Windows.Forms.Button btnSingleton;
 		private System.Windows.Forms.Button btnFactoryMethod;
+		private System.Windows.Forms.Button btnPrototype;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -40,13 +41,15 @@ namespace App
 		private void InitializeComponent()
 		{
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.btnSingleton = new System.Windows.Forms.Button();
 			this.btnFactoryMethod = new System.Windows.Forms.Button();
+			this.btnSingleton = new System.Windows.Forms.Button();
+			this.btnPrototype = new System.Windows.Forms.Button();
 			this.groupBox1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// groupBox1
 			// 
+			this.groupBox1.Controls.Add(this.btnPrototype);
 			this.groupBox1.Controls.Add(this.btnFactoryMethod);
 			this.groupBox1.Controls.Add(this.btnSingleton);
 			this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -57,6 +60,17 @@ namespace App
 			this.groupBox1.TabIndex = 0;
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "Patrón de diseño";
+			// 
+			// btnFactoryMethod
+			// 
+			this.btnFactoryMethod.ForeColor = System.Drawing.Color.DarkSlateGray;
+			this.btnFactoryMethod.Location = new System.Drawing.Point(30, 112);
+			this.btnFactoryMethod.Name = "btnFactoryMethod";
+			this.btnFactoryMethod.Size = new System.Drawing.Size(139, 36);
+			this.btnFactoryMethod.TabIndex = 1;
+			this.btnFactoryMethod.Text = "Factory";
+			this.btnFactoryMethod.UseVisualStyleBackColor = true;
+			this.btnFactoryMethod.Click += new System.EventHandler(this.BtnFactoryMethodClick);
 			// 
 			// btnSingleton
 			// 
@@ -69,16 +83,16 @@ namespace App
 			this.btnSingleton.UseVisualStyleBackColor = true;
 			this.btnSingleton.Click += new System.EventHandler(this.BtnSingletonClick);
 			// 
-			// btnFactoryMethod
+			// btnPrototype
 			// 
-			this.btnFactoryMethod.ForeColor = System.Drawing.Color.DarkSlateGray;
-			this.btnFactoryMethod.Location = new System.Drawing.Point(30, 112);
-			this.btnFactoryMethod.Name = "btnFactoryMethod";
-			this.btnFactoryMethod.Size = new System.Drawing.Size(139, 36);
-			this.btnFactoryMethod.TabIndex = 1;
-			this.btnFactoryMethod.Text = "Factory";
-			this.btnFactoryMethod.UseVisualStyleBackColor = true;
-			this.btnFactoryMethod.Click += new System.EventHandler(this.BtnFactoryMethodClick);
+			this.btnPrototype.ForeColor = System.Drawing.Color.DarkSlateGray;
+			this.btnPrototype.Location = new System.Drawing.Point(30, 176);
+			this.btnPrototype.Name = "btnPrototype";
+			this.btnPrototype.Size = new System.Drawing.Size(139, 36);
+			this.btnPrototype.TabIndex = 2;
+			this.btnPrototype.Text = "Prototype";
+			this.btnPrototype.UseVisualStyleBackColor = true;
+			this.btnPrototype.Click += new System.EventHandler(this.BtnPrototypeClick);
 			// 
 			// MainForm
 			// 
