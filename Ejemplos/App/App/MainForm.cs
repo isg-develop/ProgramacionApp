@@ -10,6 +10,7 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
+using App.factory;
 using App.Singleton;
 
 namespace App
@@ -21,21 +22,24 @@ namespace App
 	{
 		public MainForm()
 		{
-			//
-			// The InitializeComponent() call is required for Windows Forms designer support.
-			//
+			//Inicializa el formulario
 			InitializeComponent();
-			
-			//
-			// TODO: Add constructor code after the InitializeComponent() call.
-			//
 		}
+		
 		void BtnSingletonClick(object sender, EventArgs e)
 		{
 			//Instancia singleton
-			BaseMDIForm1 v = BaseMDIForm1.GetInstance();
-			v.StartPosition = FormStartPosition.CenterScreen;		
-			v.Show();
+			BaseMDIForm1 ventana = BaseMDIForm1.GetInstance();
+			ventana.StartPosition = FormStartPosition.CenterScreen;		
+			ventana.Show();
+		}
+		
+		void BtnFactoryMethodClick(object sender, EventArgs e)
+		{
+			//Ver formulario
+			FacturaForm ventana = new FacturaForm();
+			ventana.StartPosition = FormStartPosition.CenterScreen;		
+			ventana.Show();
 		}
 	}
 }

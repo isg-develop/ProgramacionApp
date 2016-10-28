@@ -50,6 +50,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="factory\FactoriaFacturas.cs" />
+    <Compile Include="factory\Factura.cs" />
+    <Compile Include="factory\FacturaForm.cs" />
+    <Compile Include="factory\FacturaForm.Designer.cs">
+      <DependentUpon>FacturaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="factory\FacturaIva.cs" />
+    <Compile Include="factory\FacturaIvaReducido.cs" />
     <Compile Include="MainForm.cs" />
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -73,9 +81,13 @@
     <None Include="app.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="factory" />
     <Folder Include="Singleton" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="factory\FacturaForm.resx">
+      <DependentUpon>FacturaForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
