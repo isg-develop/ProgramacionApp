@@ -1,0 +1,11 @@
+C:\GitHub\ProgramacionApp\Ejemplos\App\App\obj\Debug\App.csprojResolveAssemblyReference.cache
+C:\GitHub\ProgramacionApp\Ejemplos\App\App\obj\Debug\App.MainForm.resources
+C:\GitHub\ProgramacionApp\Ejemplos\App\App\obj\Debug\App.Singleton.BaseMDIForm1.resources
+C:\GitHub\ProgramacionApp\Ejemplos\App\App\obj\Debug\App.csproj.GenerateResource.Cache
+C:\GitHub\ProgramacionApp\Ejemplos\App\App\bin\Debug\App.exe.config
+C:\GitHub\ProgramacionApp\Ejemplos\App\App\bin\Debug\App.exe
+C:\GitHub\ProgramacionApp\Ejemplos\App\App\bin\Debug\App.pdb
+C:\GitHub\ProgramacionApp\Ejemplos\App\App\obj\Debug\App.exe
+C:\GitHub\ProgramacionApp\Ejemplos\App\App\obj\Debug\App.pdb
+C:\GitHub\ProgramacionApp\Ejemplos\App\App\obj\Debug\App.Singleton.NormalForm.resources
+C:\GitHub\ProgramacionApp\Ejemplos\App\App\obj\Debug\App.Singleton.SingletonForm.resources
