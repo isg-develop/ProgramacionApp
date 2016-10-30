@@ -41,5 +41,50 @@ namespace App
 			ventana.StartPosition = FormStartPosition.CenterScreen;		
 			ventana.Show();
 		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		void BtnMVCClick(object sender, EventArgs e)
+		{
+			//Ver formulario
+			App.MVC_basico.VistaForm ventana = new App.MVC_basico.VistaForm();
+			ventana.StartPosition = FormStartPosition.CenterScreen;		
+			ventana.Show();
+		}
 	}
 }
