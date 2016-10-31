@@ -115,7 +115,14 @@ namespace App.MVC_basico
         //Finaliza movimiento de un punto
         //#endregion
 
+        void BtnPersonalizarClick(object sender, EventArgs e)
+		{
+        	App.WinFormEvent.LimitesForms ventana = new App.WinFormEvent.LimitesForms();
+        	ventana.Show();
+		}
 
-	//Finaliza el windows forms
+			
 	}
+	//Finaliza el windows forms	
+	
 }

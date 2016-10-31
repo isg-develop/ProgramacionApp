@@ -4,10 +4,15 @@ C:\GitHub\ProgramacionApp\Ejemplos\App\App\bin\Debug\App.pdb
 C:\GitHub\ProgramacionApp\Ejemplos\App\App\obj\Debug\App.csprojResolveAssemblyReference.cache
 C:\GitHub\ProgramacionApp\Ejemplos\App\App\obj\Debug\App.factory.FacturaForm.resources
 C:\GitHub\ProgramacionApp\Ejemplos\App\App\obj\Debug\App.MainForm.resources
+C:\GitHub\ProgramacionApp\Ejemplos\App\App\obj\Debug\App.MVC_basico.VistaForm.resources
 C:\GitHub\ProgramacionApp\Ejemplos\App\App\obj\Debug\App.Singleton.BaseMDIForm1.resources
 C:\GitHub\ProgramacionApp\Ejemplos\App\App\obj\Debug\App.Singleton.NormalForm.resources
 C:\GitHub\ProgramacionApp\Ejemplos\App\App\obj\Debug\App.Singleton.SingletonForm.resources
+C:\GitHub\ProgramacionApp\Ejemplos\App\App\obj\Debug\App.WinFormEvent.DrawingForm.resources
+C:\GitHub\ProgramacionApp\Ejemplos\App\App\obj\Debug\App.WinFormEvent.TecladoPressForm.resources
 C:\GitHub\ProgramacionApp\Ejemplos\App\App\obj\Debug\App.csproj.GenerateResource.Cache
 C:\GitHub\ProgramacionApp\Ejemplos\App\App\obj\Debug\App.exe
 C:\GitHub\ProgramacionApp\Ejemplos\App\App\obj\Debug\App.pdb
-C:\GitHub\ProgramacionApp\Ejemplos\App\App\obj\Debug\App.MVC_basico.VistaForm.resources
+C:\GitHub\ProgramacionApp\Ejemplos\App\App\obj\Debug\App.WinFormEvent.DrawInterceptionForm.resources
+C:\GitHub\ProgramacionApp\Ejemplos\App\App\obj\Debug\App.WinFormEvent.NubesForm.resources
+C:\GitHub\ProgramacionApp\Ejemplos\App\App\obj\Debug\App.WinFormEvent.LimitesForms.resources

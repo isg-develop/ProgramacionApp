@@ -83,6 +83,27 @@
     <Compile Include="Singleton\SingletonForm.Designer.cs">
       <DependentUpon>SingletonForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="WinFormEvent\DrawingForm.cs" />
+    <Compile Include="WinFormEvent\DrawingForm.Designer.cs">
+      <DependentUpon>DrawingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormEvent\DrawInterceptionForm.cs" />
+    <Compile Include="WinFormEvent\DrawInterceptionForm.Designer.cs">
+      <DependentUpon>DrawInterceptionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormEvent\LimitesForms.cs" />
+    <Compile Include="WinFormEvent\LimitesForms.Designer.cs">
+      <DependentUpon>LimitesForms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormEvent\NubesForm.cs" />
+    <Compile Include="WinFormEvent\NubesForm.Designer.cs">
+      <DependentUpon>NubesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormEvent\ObjetoNube.cs" />
+    <Compile Include="WinFormEvent\TecladoPressForm.cs" />
+    <Compile Include="WinFormEvent\TecladoPressForm.Designer.cs">
+      <DependentUpon>TecladoPressForm.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -90,6 +111,8 @@
   <ItemGroup>
     <Folder Include="factory" />
     <Folder Include="MVC_basico" />
+    <Folder Include="Resources" />
+    <Folder Include="WinFormEvent" />
     <Folder Include="Singleton" />
   </ItemGroup>
   <ItemGroup>
@@ -110,6 +133,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Singleton\SingletonForm.resx">
       <DependentUpon>SingletonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormEvent\DrawingForm.resx">
+      <DependentUpon>DrawingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormEvent\DrawInterceptionForm.resx">
+      <DependentUpon>DrawInterceptionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormEvent\LimitesForms.resx">
+      <DependentUpon>LimitesForms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormEvent\NubesForm.resx">
+      <DependentUpon>NubesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormEvent\TecladoPressForm.resx">
+      <DependentUpon>TecladoPressForm.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
