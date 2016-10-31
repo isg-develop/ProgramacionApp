@@ -16,3 +16,4 @@ C:\GitHub\ProgramacionApp\Ejemplos\App\App\obj\Debug\App.pdb
 C:\GitHub\ProgramacionApp\Ejemplos\App\App\obj\Debug\App.WinFormEvent.DrawInterceptionForm.resources
 C:\GitHub\ProgramacionApp\Ejemplos\App\App\obj\Debug\App.WinFormEvent.NubesForm.resources
 C:\GitHub\ProgramacionApp\Ejemplos\App\App\obj\Debug\App.WinFormEvent.LimitesForms.resources
+C:\GitHub\ProgramacionApp\Ejemplos\App\App\obj\Debug\App.prototype.PrototypeForm.resources

@@ -22,8 +22,7 @@ namespace App.MVC_basico
 			//Inicialiador
 			InitializeComponent();
 			//Tamaño mínimo del formulario
-            this.MinimumSize = new Size(600, 500);
-
+            MinimumSize = new Size(600, 500);
 		}
 		
 		
@@ -117,8 +116,7 @@ namespace App.MVC_basico
 
         void BtnPersonalizarClick(object sender, EventArgs e)
 		{
-        	App.WinFormEvent.LimitesForms ventana = new App.WinFormEvent.LimitesForms();
-        	ventana.Show();
+        	//
 		}
 
 			

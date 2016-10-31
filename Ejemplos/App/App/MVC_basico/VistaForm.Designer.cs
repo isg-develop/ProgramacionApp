@@ -44,7 +44,6 @@ namespace App.MVC_basico
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
 			this.btnGraficar = new System.Windows.Forms.Button();
-			this.btnPersonalizar = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
@@ -82,8 +81,8 @@ namespace App.MVC_basico
 			this.label3.Size = new System.Drawing.Size(224, 208);
 			this.label3.TabIndex = 3;
 			this.label3.Text = "- Puedes editar los valores de la tabla.\r\n- Puedes mover con el mouse los puntos " +
-			"del gráfico\r\n      * clic sin soltar (movimiento arriba/abajo)\r\n\r\nClic en el bot" +
-			"on Gráficar para ver los cambios.";
+	"del gráfico\r\n      * clic sin soltar (movimiento arriba/abajo)\r\n\r\nClic en el bot" +
+	"on Gráficar para ver los cambios.";
 			// 
 			// pictureBox1
 			// 
@@ -108,22 +107,11 @@ namespace App.MVC_basico
 			this.btnGraficar.UseVisualStyleBackColor = true;
 			this.btnGraficar.Click += new System.EventHandler(this.btnGraficar_Click);
 			// 
-			// btnPersonalizar
-			// 
-			this.btnPersonalizar.Location = new System.Drawing.Point(321, 31);
-			this.btnPersonalizar.Name = "btnPersonalizar";
-			this.btnPersonalizar.Size = new System.Drawing.Size(75, 23);
-			this.btnPersonalizar.TabIndex = 6;
-			this.btnPersonalizar.Text = "Personalizar";
-			this.btnPersonalizar.UseVisualStyleBackColor = true;
-			this.btnPersonalizar.Click += new System.EventHandler(this.BtnPersonalizarClick);
-			// 
 			// VistaForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(765, 487);
-			this.Controls.Add(this.btnPersonalizar);
 			this.Controls.Add(this.btnGraficar);
 			this.Controls.Add(this.pictureBox1);
 			this.Controls.Add(this.label3);
@@ -137,8 +125,8 @@ namespace App.MVC_basico
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
 			this.ResumeLayout(false);
+
 		}
-		private System.Windows.Forms.Button btnPersonalizar;
 		private System.Windows.Forms.Button btnGraficar;
 		private System.Windows.Forms.BindingSource bindingSource1;
 		private System.Windows.Forms.PictureBox pictureBox1;
