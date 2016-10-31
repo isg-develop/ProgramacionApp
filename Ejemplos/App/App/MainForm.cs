@@ -11,6 +11,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 using App.factory;
+using App.prototype;
 using App.Singleton;
 
 namespace App
@@ -42,49 +43,12 @@ namespace App
 			ventana.Show();
 		}
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		void BtnMVCClick(object sender, EventArgs e)
+		void BtnPrototypeClick(object sender, EventArgs e)
 		{
-			//Ver formulario
-			App.MVC_basico.VistaForm ventana = new App.MVC_basico.VistaForm();
+			// Ver formulario
+			PrototypeForm ventana = new PrototypeForm();
 			ventana.StartPosition = FormStartPosition.CenterScreen;		
-			ventana.Show();
+			ventana.Show();	
 		}
 	}
 }

@@ -17,6 +17,7 @@ namespace App
 		private System.Windows.Forms.GroupBox groupBox1;
 		private System.Windows.Forms.Button btnSingleton;
 		private System.Windows.Forms.Button btnFactoryMethod;
+		private System.Windows.Forms.Button btnPrototype;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -42,12 +43,13 @@ namespace App
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
 			this.btnFactoryMethod = new System.Windows.Forms.Button();
 			this.btnSingleton = new System.Windows.Forms.Button();
-			this.btnMVC = new System.Windows.Forms.Button();
+			this.btnPrototype = new System.Windows.Forms.Button();
 			this.groupBox1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// groupBox1
 			// 
+			this.groupBox1.Controls.Add(this.btnPrototype);
 			this.groupBox1.Controls.Add(this.btnFactoryMethod);
 			this.groupBox1.Controls.Add(this.btnSingleton);
 			this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -81,17 +83,16 @@ namespace App
 			this.btnSingleton.UseVisualStyleBackColor = true;
 			this.btnSingleton.Click += new System.EventHandler(this.BtnSingletonClick);
 			// 
-			// btnMVC
+			// btnPrototype
 			// 
-			this.btnMVC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnMVC.ForeColor = System.Drawing.Color.DarkSlateGray;
-			this.btnMVC.Location = new System.Drawing.Point(65, 347);
-			this.btnMVC.Name = "btnMVC";
-			this.btnMVC.Size = new System.Drawing.Size(139, 36);
-			this.btnMVC.TabIndex = 2;
-			this.btnMVC.Text = "MVC";
-			this.btnMVC.UseVisualStyleBackColor = true;
-			this.btnMVC.Click += new System.EventHandler(this.BtnMVCClick);
+			this.btnPrototype.ForeColor = System.Drawing.Color.DarkSlateGray;
+			this.btnPrototype.Location = new System.Drawing.Point(30, 176);
+			this.btnPrototype.Name = "btnPrototype";
+			this.btnPrototype.Size = new System.Drawing.Size(139, 36);
+			this.btnPrototype.TabIndex = 2;
+			this.btnPrototype.Text = "Prototype";
+			this.btnPrototype.UseVisualStyleBackColor = true;
+			this.btnPrototype.Click += new System.EventHandler(this.BtnPrototypeClick);
 			// 
 			// MainForm
 			// 
@@ -99,7 +100,6 @@ namespace App
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.SteelBlue;
 			this.ClientSize = new System.Drawing.Size(275, 652);
-			this.Controls.Add(this.btnMVC);
 			this.Controls.Add(this.groupBox1);
 			this.ForeColor = System.Drawing.Color.Maroon;
 			this.Name = "MainForm";
@@ -107,7 +107,7 @@ namespace App
 			this.Text = "App";
 			this.groupBox1.ResumeLayout(false);
 			this.ResumeLayout(false);
+
 		}
-		private System.Windows.Forms.Button btnMVC;
 	}
 }

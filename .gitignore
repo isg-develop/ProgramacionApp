@@ -1,4 +1,2 @@
-Ejemplos/App/App/bin/Debug/App.exe
-Ejemplos/App/App/bin/Debug/App.pdb
-Ejemplos/App/App/obj/Debug/App.exe
-Ejemplos/App/App/obj/Debug/App.exe
+Ejemplos/App/App/bin/*
+Ejemplos/App/App/obj/*
