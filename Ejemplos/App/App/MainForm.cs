@@ -9,10 +9,13 @@
 using System;
 using System.Windows.Forms;
 using App.factory;
+using App.Galería;
+using App.Juegos;
 using App.prototype;
 using App.Singleton;
 using App.MVC_basico;
 using App.WinFormEvent;
+using App.Pong;
 
 namespace App
 {
@@ -111,7 +114,7 @@ namespace App
 			void BtnPictureClick(object sender, EventArgs e)
 			{
 				// Ver formulario
-				VerFormulario(new DrawingForm());
+				VerFormulario(new LoadPicture());
 			}
 			void BtnLineasClick(object sender, EventArgs e)
 			{
@@ -121,12 +124,12 @@ namespace App
 			void BtnPongClick(object sender, EventArgs e)
 			{
 				// Ver formulario
-				VerFormulario(new DrawingForm());
+				VerFormulario(new PongForms());
 			}
 			void BtnSnakeClick(object sender, EventArgs e)
 			{
 				// Ver formulario
-				VerFormulario(new DrawingForm());
+				VerFormulario(new SnakeForm());
 			}
 		
 		#endregion

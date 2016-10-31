@@ -58,6 +58,7 @@
     </Compile>
     <Compile Include="factory\FacturaIva.cs" />
     <Compile Include="factory\FacturaIvaReducido.cs" />
+    <Compile Include="factory\TipoDisco.cs" />
     <Compile Include="MainForm.cs" />
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -69,8 +70,27 @@
     <Compile Include="MVC_basico\VistaForm.Designer.cs">
       <DependentUpon>VistaForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Picture\LoadPicture.cs" />
+    <Compile Include="Picture\LoadPicture.Designer.cs">
+      <DependentUpon>LoadPicture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pong\FiguraBase.cs" />
+    <Compile Include="Pong\Pelota.cs" />
+    <Compile Include="Pong\PongForms.cs" />
+    <Compile Include="Pong\PongForms.Designer.cs">
+      <DependentUpon>PongForms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pong\Tabla.cs" />
+    <Compile Include="Pong\TestGraphics.cs" />
+    <Compile Include="Pong\TestGraphics.Designer.cs">
+      <DependentUpon>TestGraphics.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resource.Designer.cs">
+      <DependentUpon>Resource.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+    </Compile>
     <Compile Include="prototype\BaseClonable.cs" />
     <Compile Include="prototype\PrototypeForm.cs" />
     <Compile Include="prototype\PrototypeForm.Designer.cs">
@@ -88,6 +108,17 @@
     <Compile Include="Singleton\SingletonForm.cs" />
     <Compile Include="Singleton\SingletonForm.Designer.cs">
       <DependentUpon>SingletonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Snake\Circle.cs" />
+    <Compile Include="Snake\Input.cs" />
+    <Compile Include="Snake\Settings.cs" />
+    <Compile Include="Snake\SimpleSnake.cs" />
+    <Compile Include="Snake\SimpleSnake.Designer.cs">
+      <DependentUpon>SimpleSnake.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Snake\SnakeForm.cs" />
+    <Compile Include="Snake\SnakeForm.designer.cs">
+      <DependentUpon>SnakeForm.cs</DependentUpon>
     </Compile>
     <Compile Include="WinFormEvent\DrawingForm.cs" />
     <Compile Include="WinFormEvent\DrawingForm.Designer.cs">
@@ -113,12 +144,17 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="Resources\Android.JPG" />
+    <None Include="Resources\pong.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="factory" />
+    <Folder Include="Picture" />
     <Folder Include="MVC_basico" />
+    <Folder Include="Pong" />
     <Folder Include="prototype" />
     <Folder Include="Resources" />
+    <Folder Include="Snake" />
     <Folder Include="WinFormEvent" />
     <Folder Include="Singleton" />
   </ItemGroup>
@@ -132,6 +168,19 @@
     <EmbeddedResource Include="MVC_basico\VistaForm.resx">
       <DependentUpon>VistaForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Picture\LoadPicture.resx">
+      <DependentUpon>LoadPicture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pong\PongForms.resx">
+      <DependentUpon>PongForms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pong\TestGraphics.resx">
+      <DependentUpon>TestGraphics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="prototype\PrototypeForm.resx">
       <DependentUpon>PrototypeForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -143,6 +192,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Singleton\SingletonForm.resx">
       <DependentUpon>SingletonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Snake\SimpleSnake.resx">
+      <DependentUpon>SimpleSnake.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Snake\SnakeForm.resx">
+      <DependentUpon>SnakeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WinFormEvent\DrawingForm.resx">
       <DependentUpon>DrawingForm.cs</DependentUpon>
