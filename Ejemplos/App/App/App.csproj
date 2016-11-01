@@ -50,6 +50,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbstractFactory\FactoriaIngredientes.cs" />
+    <Compile Include="AbstractFactory\FactoryIngredientesForm.cs" />
+    <Compile Include="AbstractFactory\FactoryIngredientesForm.Designer.cs">
+      <DependentUpon>FactoryIngredientesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbstractFactory\IngredientesNewYork.cs" />
+    <Compile Include="AbstractFactory\Pizza.cs" />
     <Compile Include="factory\FactoriaFacturas.cs" />
     <Compile Include="factory\Factura.cs" />
     <Compile Include="factory\FacturaForm.cs" />
@@ -120,6 +127,10 @@
     <Compile Include="Snake\SnakeForm.designer.cs">
       <DependentUpon>SnakeForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="TorreLineas\LineaTorreForm.cs" />
+    <Compile Include="TorreLineas\LineaTorreForm.Designer.cs">
+      <DependentUpon>LineaTorreForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="WinFormEvent\DrawingForm.cs" />
     <Compile Include="WinFormEvent\DrawingForm.Designer.cs">
       <DependentUpon>DrawingForm.cs</DependentUpon>
@@ -149,6 +160,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="factory" />
+    <Folder Include="AbstractFactory" />
+    <Folder Include="TorreLineas" />
     <Folder Include="Picture" />
     <Folder Include="MVC_basico" />
     <Folder Include="Pong" />
@@ -159,6 +172,9 @@
     <Folder Include="Singleton" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AbstractFactory\FactoryIngredientesForm.resx">
+      <DependentUpon>FactoryIngredientesForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="factory\FacturaForm.resx">
       <DependentUpon>FacturaForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -198,6 +214,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Snake\SnakeForm.resx">
       <DependentUpon>SnakeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TorreLineas\LineaTorreForm.resx">
+      <DependentUpon>LineaTorreForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WinFormEvent\DrawingForm.resx">
       <DependentUpon>DrawingForm.cs</DependentUpon>

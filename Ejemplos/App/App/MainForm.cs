@@ -8,14 +8,16 @@
  */
 using System;
 using System.Windows.Forms;
+using App.AbstractFactory;
 using App.factory;
 using App.Galería;
 using App.Juegos;
+using App.MVC_basico;
+using App.Pong;
 using App.prototype;
 using App.Singleton;
-using App.MVC_basico;
+using App.TorreLineas;
 using App.WinFormEvent;
-using App.Pong;
 
 namespace App
 {
@@ -51,7 +53,7 @@ namespace App
 			void BtnFactoryMethodClick(object sender, EventArgs e)
 			{
 				//Ver formulario
-				FacturaForm ventana = new FacturaForm();
+				FactoryIngredientesForm ventana = new FactoryIngredientesForm();
 				ventana.StartPosition = FormStartPosition.CenterScreen;		
 				ventana.Show();
 			}
@@ -119,7 +121,7 @@ namespace App
 			void BtnLineasClick(object sender, EventArgs e)
 			{
 				// Ver formulario
-				VerFormulario(new DrawingForm());
+				VerFormulario(new LineaTorreForm());
 			}
 			void BtnPongClick(object sender, EventArgs e)
 			{
