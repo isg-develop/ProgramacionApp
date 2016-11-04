@@ -75,16 +75,16 @@ namespace App.prototype
     }
 
     //Propiedad de la clase principal - subclase
-    class Rueda
+     class Rueda : ICloneable
     {
         public int Diametro { get; set; }
         public string Llanta { get; set; }
+     	
+		public object Clone()
+		{
+			return this.MemberwiseClone();
+		}
     }
 
-    //Propiedad de la clase principal - subclase
-    class Carroceria
-    {
-        public string Material { get; set; }
-        public string TipoCarroceria { get; set; }
-    }
+    
 }

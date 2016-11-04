@@ -99,6 +99,7 @@
       <AutoGen>True</AutoGen>
     </Compile>
     <Compile Include="prototype\BaseClonable.cs" />
+    <Compile Include="prototype\Carreceria.cs" />
     <Compile Include="prototype\PrototypeForm.cs" />
     <Compile Include="prototype\PrototypeForm.Designer.cs">
       <DependentUpon>PrototypeForm.cs</DependentUpon>

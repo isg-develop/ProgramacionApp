@@ -40,11 +40,11 @@ namespace App.MVC_basico
 	
 	
         //constructor inicializa nuestro listado
-        public Modelo()
+       
+ 		public Modelo()
         {
          pointsList = new List<Muestra>();
         }
-
 
         public void Initialize( int Points, int MaxValue )
         {

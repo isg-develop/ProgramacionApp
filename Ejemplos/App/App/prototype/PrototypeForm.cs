@@ -93,12 +93,21 @@ namespace App.prototype
 		private void Imprimir()
         {
         	 //Imprime objeto original
+        	
+        	
+        	
         	txtResultado.Text +=("----------------    Contenido para:    ----------------" + Environment.NewLine); 
             txtResultado.Text +=("---Original: " + vehiculo1.VehiculoInfo() + "---");
             //Imprime objeto clonado
             txtResultado.Text +=("----------------    Contenido para:    ----------------" + Environment.NewLine); 
             txtResultado.Text +=("---Clonado: " + vehiculoClonado.VehiculoInfo() + "---");
         
+            
+            txtResultado.Text += ""; 
+            txtResultado.Text += "Mi nombre es ";
+        	txtResultado.Text += "Ismael Sánchez González ";
+        	
+        	
         }
 		void BtnClearClick(object sender, EventArgs e)
 		{
