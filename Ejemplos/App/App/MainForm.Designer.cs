@@ -70,6 +70,7 @@ namespace App
 			this.btnPong = new System.Windows.Forms.Button();
 			this.btnLineas = new System.Windows.Forms.Button();
 			this.btnPicture = new System.Windows.Forms.Button();
+			this.btnMySql = new System.Windows.Forms.Button();
 			this.groupBox1.SuspendLayout();
 			this.groupBox2.SuspendLayout();
 			this.groupBox3.SuspendLayout();
@@ -219,6 +220,7 @@ namespace App
 			// 
 			// groupBox3
 			// 
+			this.groupBox3.Controls.Add(this.btnMySql);
 			this.groupBox3.Controls.Add(this.btnSnake);
 			this.groupBox3.Controls.Add(this.btnPong);
 			this.groupBox3.Controls.Add(this.btnLineas);
@@ -235,7 +237,7 @@ namespace App
 			// btnSnake
 			// 
 			this.btnSnake.ForeColor = System.Drawing.Color.DarkSlateGray;
-			this.btnSnake.Location = new System.Drawing.Point(252, 110);
+			this.btnSnake.Location = new System.Drawing.Point(175, 110);
 			this.btnSnake.Name = "btnSnake";
 			this.btnSnake.Size = new System.Drawing.Size(139, 36);
 			this.btnSnake.TabIndex = 4;
@@ -257,7 +259,7 @@ namespace App
 			// btnLineas
 			// 
 			this.btnLineas.ForeColor = System.Drawing.Color.DarkSlateGray;
-			this.btnLineas.Location = new System.Drawing.Point(252, 45);
+			this.btnLineas.Location = new System.Drawing.Point(175, 45);
 			this.btnLineas.Name = "btnLineas";
 			this.btnLineas.Size = new System.Drawing.Size(139, 36);
 			this.btnLineas.TabIndex = 1;
@@ -275,6 +277,17 @@ namespace App
 			this.btnPicture.Text = "Picture";
 			this.btnPicture.UseVisualStyleBackColor = true;
 			this.btnPicture.Click += new System.EventHandler(this.BtnPictureClick);
+			// 
+			// btnMySql
+			// 
+			this.btnMySql.ForeColor = System.Drawing.Color.DarkSlateGray;
+			this.btnMySql.Location = new System.Drawing.Point(315, 45);
+			this.btnMySql.Name = "btnMySql";
+			this.btnMySql.Size = new System.Drawing.Size(139, 36);
+			this.btnMySql.TabIndex = 5;
+			this.btnMySql.Text = "MySql";
+			this.btnMySql.UseVisualStyleBackColor = true;
+			this.btnMySql.Click += new System.EventHandler(this.BtnMySqlClick);
 			// 
 			// MainForm
 			// 
@@ -294,7 +307,7 @@ namespace App
 			this.groupBox2.ResumeLayout(false);
 			this.groupBox3.ResumeLayout(false);
 			this.ResumeLayout(false);
-
 		}
+		private System.Windows.Forms.Button btnMySql;
 	}
 }

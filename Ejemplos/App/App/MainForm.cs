@@ -135,5 +135,11 @@ namespace App
 			}
 		
 		#endregion
+		
+		void BtnMySqlClick(object sender, EventArgs e)
+		{
+			App.data.ListadoForm ventana = new App.data.ListadoForm();
+			ventana.Show();
+		}
 	}
 }

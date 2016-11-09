@@ -34,6 +34,9 @@
     <Reference Include="Microsoft.CSharp">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\packages\MySql.Data.6.9.9\lib\net40\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -57,6 +60,12 @@
     </Compile>
     <Compile Include="AbstractFactory\IngredientesNewYork.cs" />
     <Compile Include="AbstractFactory\Pizza.cs" />
+    <Compile Include="data\ListadoControlador.cs" />
+    <Compile Include="data\ListadoControladorMySQL.cs" />
+    <Compile Include="data\ListadoForm.cs" />
+    <Compile Include="data\ListadoForm.Designer.cs">
+      <DependentUpon>ListadoForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="factory\FactoriaFacturas.cs" />
     <Compile Include="factory\Factura.cs" />
     <Compile Include="factory\FacturaForm.cs" />
@@ -77,6 +86,7 @@
     <Compile Include="MVC_basico\VistaForm.Designer.cs">
       <DependentUpon>VistaForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="data\TestConnection_MySQL.cs" />
     <Compile Include="Picture\LoadPicture.cs" />
     <Compile Include="Picture\LoadPicture.Designer.cs">
       <DependentUpon>LoadPicture.cs</DependentUpon>
@@ -156,12 +166,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="packages.config" />
     <None Include="Resources\Android.JPG" />
     <None Include="Resources\pong.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="factory" />
     <Folder Include="AbstractFactory" />
+    <Folder Include="data" />
     <Folder Include="TorreLineas" />
     <Folder Include="Picture" />
     <Folder Include="MVC_basico" />
@@ -175,6 +187,9 @@
   <ItemGroup>
     <EmbeddedResource Include="AbstractFactory\FactoryIngredientesForm.resx">
       <DependentUpon>FactoryIngredientesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="data\ListadoForm.resx">
+      <DependentUpon>ListadoForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="factory\FacturaForm.resx">
       <DependentUpon>FacturaForm.cs</DependentUpon>
