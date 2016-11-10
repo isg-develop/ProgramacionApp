@@ -43,7 +43,13 @@ namespace App.data
 		public void CrearObjeto()
 		{
 			MySqlConnection conexion = GetConexion();
-				
+			string consulta = @"INSERT INTO `pelicula`
+							( `Nombre`, `Sinopsis`, `Genero`, `myurl`, `video`)
+					 VALUES ('Un nombre','Una sinopsis','Un genero','', ''); 	";
+			
+            MySqlCommand miComando = new MySqlCommand(consulta, conexion);  
+            var resp = miComando.ExecuteReader();     // Here our query will be executed and data saved into the database.  
+          	
 		}
 		
 		public bool ActualizaObjeto()
@@ -61,7 +67,14 @@ namespace App.data
 		public object GetObjeto(int ID)
 		{
 			MySqlConnection conexion = GetConexion();
-			return null;
+			MySqlCommand cmd = new MySqlCommand();
+            string consulta = "SELECT * From pelicula Where Id = " + ID;
+            MySqlDataAdapter dataAdapter = new MySqlDataAdapter(consulta, conexion); //traemos los datos en Adapter
+            //DataSet dataSet = new DataSet(); // creamos la consulta del objeto DataSet
+            //dataAdapter.Fill(dataSet, "pelicula");//llenamos el dataset
+            DataTable dTable = new DataTable(); 
+            dataAdapter.Fill(dTable);
+            return dTable;
 		}
 		
 		public DataTable  GetTodos()
