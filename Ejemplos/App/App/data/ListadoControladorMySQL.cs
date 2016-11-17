@@ -12,37 +12,14 @@ namespace App.data
 	/// </summary>
 	public class ListadoControladorMySQL: ListadoControlador
 	{
-		public MySqlConnection GetConexion(){
-		  MySqlConnection conexion = null;
-            try
-            {
-                MySqlConnectionStringBuilder builder = new MySqlConnectionStringBuilder();
-                builder.Server = "localhost";
-                builder.Port = 3306;
-                builder.UserID = "root";
-                builder.Password = "";
-                builder.Database = "cine";
-               
-                //Asigna y abre la conexión
-                conexion = new MySqlConnection(builder.ToString());
-                conexion.Open();
-			}
-            catch (Exception ex)
-            {
-                Console.WriteLine("Error en la conexión: " + ex.Message);
-            }
-            return conexion;
-		}
-		
-		
-		
+		ContextData context = new ContextData();
 		public ListadoControladorMySQL()
 		{
 		}
 		
 		public void CrearObjeto()
 		{
-			MySqlConnection conexion = GetConexion();
+			MySqlConnection conexion = context.GetConexion();
 			string consulta = @"INSERT INTO `pelicula`
 							( `Nombre`, `Sinopsis`, `Genero`, `myurl`, `video`)
 					 VALUES ('Un nombre','Una sinopsis','Un genero','', ''); 	";
@@ -54,19 +31,19 @@ namespace App.data
 		
 		public bool ActualizaObjeto()
 		{
-			MySqlConnection conexion = GetConexion();
+			MySqlConnection conexion = context.GetConexion();
 			return true;
 		}
 		
 		public bool BorrarObjeto()
 		{
-			MySqlConnection conexion = GetConexion();
+			MySqlConnection conexion = context.GetConexion();
 			return true;
 		}
 		
 		public object GetObjeto(int ID)
 		{
-			MySqlConnection conexion = GetConexion();
+			MySqlConnection conexion = context.GetConexion();
 			MySqlCommand cmd = new MySqlCommand();
             string consulta = "SELECT * From pelicula Where Id = " + ID;
             MySqlDataAdapter dataAdapter = new MySqlDataAdapter(consulta, conexion); //traemos los datos en Adapter
@@ -79,7 +56,7 @@ namespace App.data
 		
 		public DataTable  GetTodos()
 		{
-			MySqlConnection conexion = GetConexion();
+			MySqlConnection conexion = context.GetConexion();
 			MySqlCommand cmd = new MySqlCommand();
             string consulta = "SELECT * From pelicula";
             MySqlDataAdapter dataAdapter = new MySqlDataAdapter(consulta, conexion); //traemos los datos en Adapter

@@ -27,5 +27,11 @@ namespace App.data
 			dataGridView1.DataSource = control.GetObjeto(1);
 			control.CrearObjeto();
 		}
+		
+		void Button1Click(object sender, EventArgs e)
+		{
+			AlumnoControl control  = new AlumnoControl();
+			dataGridView1.DataSource = control.ObtenerListado();
+		}
 	}
 }

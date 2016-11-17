@@ -60,6 +60,9 @@
     </Compile>
     <Compile Include="AbstractFactory\IngredientesNewYork.cs" />
     <Compile Include="AbstractFactory\Pizza.cs" />
+    <Compile Include="data\AlumnoControl.cs" />
+    <Compile Include="data\ContextData.cs" />
+    <Compile Include="data\IAlumnoControl.cs" />
     <Compile Include="data\ListadoControlador.cs" />
     <Compile Include="data\ListadoControladorMySQL.cs" />
     <Compile Include="data\ListadoForm.cs" />
